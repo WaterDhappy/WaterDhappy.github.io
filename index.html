@@ -419,7 +419,7 @@
         <div class="container">
             <div class="col-md-12">
                 <h4>03</h4>
-                <h1 class="size-50">代表作品：视频人像分割系统</h1> 
+                <h1 class="size-50">代表作品：视频人像分割系统/真菌AI鉴定系统</h1> 
             </div>
             <nav class="categories">
                 <ul class="portfolio_filter">
@@ -429,6 +429,7 @@
                     <li><a href="" id="optimization">模型优化</a></li>
                     <li><a href="javascript:void(0);" id="display">效果展示</a></li>
                     <li><a href="javascript:void(0);" id="extend">拓展延伸</a></li>
+                    <li><a href="javascript:void(0);" id="Danna">真菌形态AI鉴定系统落地演示</a></li>
                 </ul>
             </nav>
             <!--在这里插入  -->
@@ -645,7 +646,7 @@
     <script>
     $(document).ready(function () {
         // 点击标签时切换显示的内容
-        $('#display, #extend').click(function (e) {
+        $('#display, #extend, #Danna').click(function (e) {
             e.preventDefault();
 
             // 激活当前标签并隐藏其他标签的内容
@@ -664,6 +665,10 @@
             // 如果点击的是"拓展延伸"标签
             else if (category === 'extend') {
                 videoSrc = 'img/RVM/extend.mp4';
+            }
+
+            else if (category === 'Danna'){
+                videoSrc = 'img/RVM/Danna.mp4';
             }
 
             // 更新视频源并显示视频容器
